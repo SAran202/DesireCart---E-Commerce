@@ -1,0 +1,149 @@
+<%- include('partials/header') %>
+
+<!------Single product details------>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/gallery-1.jpg" width="100%" id="productImg">
+                    <div class="small-img-row">
+
+                        <div class="small-img-col">
+                            <img src="img/gallery-1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/gallery-2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/gallery-3.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/gallery-4.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Laptop / High Processing</p>
+                    <h1>Acer Predator Triton Intel i5 10th Gen 15.6" FHD IPS 144 Hz Display Full Metal Thin & Light Gaming Laptop (8GB RAM/512GB SSD/Win10/GTX 1650Ti Graphics/19.9mm Thin/Abyssal Black), PT315-52</h1>
+                    <h4 style="color: #ff523b;">Rs 74,990</h4>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="btn">Add to Cart</a>
+                    <h3 style="color:  #ff523b;"><i class="fa fa-indent"></i> Details </h3>
+                    <br>
+                    <p style="color: #fff;">Processor: Intel Core i5-10300H processor, turbo up to 4.5 Ghz<br>
+                        Display: 15.6" display with IPS (In-Plane Switching) technology, Full HD 1920 x 1080, high-brightness (300 nits) Acer ComfyView LED-backlit TFT LCD, supporting 144 Hz<br>
+                        Memory: 8 GB of DDR4 system memory, upgradable to 32 GB using two soDIMM modules<br>
+                        Storage: 512 GB, PCIe Gen3, 8 Gb/s, NVMe<br>
+                        Warranty: One-year International Travelers Warranty (ITW)</p>
+                </div>
+            </div>
+        </div>
+
+    <!------title------>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2 style="color: #ff523b;">Related Products</h2>
+                <p>view more</p>
+            </div>
+        </div>
+
+
+     <!------All Products------>
+     <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <a href="products.html"><img src="img/product-1.jpg"></a>
+                <h4>Photo Frame</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 320</p>
+            </div>
+            <div class="col-4">
+               <img src="img/product-2.jpg">
+               <h4>Gitar</h4>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>Rs 2500</p>
+           </div>
+           <div class="col-4">
+               <img src="img/product-3.jpg">
+               <h4>Cup candles</h4>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>Rs 300</p>
+           </div>
+           <div class="col-4">
+               <img src="img/product-4.jpg">
+               <h4>Lenovo HE05 Wireless Bluetooth 5.0 in-Ear Neckband</h4>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p>Rs 1100</p>
+           </div>
+        </div>
+     </div>
+
+<%- include('partials/footer') %>
+     <!------js for toggle menu------>
+     <script>
+         var MenuItems=document.getElementById("MenuItems");
+         MenuItems.style.maxHeight="0px";
+         function menutoggle(){
+             if(MenuItems.style.maxHeight="0")
+             {
+                 MenuItems.style.maxHeight="200px";
+             }
+             else
+             {
+                 MenuItems.style.maxHeight="0px";
+             }
+         }
+     </script>
+     <!------js for product gallery------>
+     <script>
+         var productImg=document.getElementById("product img");
+         var smallImg=document.getElementById("small-img");
+
+         smallImg[0].onclick=function()
+         {
+             productImg.src=smallImg[0].src;
+         }
+         smallImg[1].onclick=function()
+         {
+             productImg.src=smallImg[1].src;
+         }
+         smallImg[2].onclick=function()
+         {
+             productImg.src=smallImg[2].src;
+         }
+         smallImg[3].onclick=function()
+         {
+             productImg.src=smallImg[3].src;
+         }
+     </script>
+
+    </body>
+</html> 
